@@ -228,6 +228,7 @@ Vamos excluir o diretório que foi criado, já que estou prestes a baixar minha 
 
 ### Referências
 
-[Manual de uso do AnaBlock](https://anablock.net.br/manual.php)
-[Automatizando o bloqueio de sites no Brasil pelo DNS usando a API da anablock.net.br (BIND9+RPZ)](https://blog.remontti.com.br/7759)
+#### [Manual de uso do AnaBlock](https://anablock.net.br/manual.php)
 
+
+#### [Automatizando o bloqueio de sites no Brasil pelo DNS usando a API da anablock.net.br (BIND9+RPZ)](https://blog.remontti.com.br/7759)
