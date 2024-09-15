@@ -1,7 +1,7 @@
 #!/bin/bash
 ANABLOCK_URL="https://api.anablock.net.br/domains/all?output=unbound"
 ANABLOCK_FILE="/etc/unbound/anablock.conf"
-REDIRECT_DOMAIN="anatel.infonetconect.com.br."
+REDIRECT_DOMAIN="dominio.dominioisp.com.br."
 LOG_FILE="/var/log/unbound_anablock_update.log"
 
 log() {
