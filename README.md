@@ -132,7 +132,15 @@ Usei como a pagina de bloqueio feita pelo [Rudimar Remontti](https://blog.remont
 
 ### Configurando uma Página de Bloqueio em Seu Servidor Web
 
-Vou deixar exemplo com fazer isso em um  **Apache**. Crie o diretório onde iremos criar nossa página:
+Vou deixar exemplo com fazer isso em um  **Apache**. 
+
+Instalar o Apache:
+
+```bash
+sudo apt install apache2
+```
+
+Crie o diretório onde iremos criar nossa página:
 ```bash
  mkdir /var/www/bloqueio
 ```
