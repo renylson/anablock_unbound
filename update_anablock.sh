@@ -1,7 +1,7 @@
 #!/bin/bash
 ANABLOCK_URL="https://api.anablock.net.br/domains/all?output=unbound"
 ANABLOCK_FILE="/etc/unbound/anablock.conf"
-REDIRECT_DOMAIN="bloqueio.seudominio.com.br."
+REDIRECT_DOMAIN="anatel.infonetconect.com.br."
 LOG_FILE="/var/log/unbound_anablock_update.log"
 
 log() {
@@ -18,9 +18,9 @@ fi
 
 log "Arquivo anablock.conf baixado com sucesso."
 
-sed -i -r \\
-    -e 's/local-zone: "([^"]+)" always_nxdomain/local-zone: "\1" redirect/' \\
-    -e 's/^local-zone: "([^"]+)".*/&\\nlocal-data: "\1 CNAME '"$REDIRECT_DOMAIN"'"/' \\
+sed -i -r \
+    -e 's/local-zone: "([^"]+)" always_nxdomain/local-zone: "\1" redirect/' \
+    -e 's/^local-zone: "([^"]+)".*/&\nlocal-data: "\1 CNAME '"$REDIRECT_DOMAIN"'"/' \
     "$ANABLOCK_FILE"
 
 if [ $? -eq 0 ]; then
